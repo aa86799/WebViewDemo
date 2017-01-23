@@ -1,0 +1,15 @@
+<html>
+<body>
+<script type="text/javascript">
+    function jsCallJava()
+    {
+        user.showUser();
+    }
+</script>
+
+<!-- 点击button调用 jsCallJava(),  user对象定义在
+mWebView.addJavascriptInterface(new User(this, "stone"), "user");
+-->
+<button onclick="jsCallJava()">test: call java method</button>
+</body>
+</html>
